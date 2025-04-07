@@ -1,0 +1,22 @@
+{
+  "name": "intentjs-react",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
+    "dev": "tsup src/index.ts --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "~5.8.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4"
+  }
+}
